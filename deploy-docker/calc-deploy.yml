@@ -4,5 +4,5 @@
   tasks:
     - name: Pull image
       docker_image:
-        name: vtandonv/calculatordevopslatest
+        name: tusharsharma3/calcspe
         source: pull
