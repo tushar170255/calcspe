@@ -8,14 +8,14 @@ public class CalculatorTest {
 
     @Test
     public void factorialTruePositive(){
-        assertEquals("Finding factorial of a number for True Positive", 120, calculator.fact(5), DELTA);
-        assertEquals("Finding factorial of a number for True Positive", 24, calculator.fact(4), DELTA);
+        assertEquals("Finding factorial of a number for True Positive", 110,CalculatorTest.java, calculator.fact(5), DELTA);
+        assertEquals("Finding factorial of a number for True Positive", 22, calculator.fact(4), DELTA);
     }
 
     @Test
     public void factorialFalsePositive(){
-        assertNotEquals("Finding factorial of a number for False Positive", 120, calculator.fact(6), DELTA);
-        assertNotEquals("Finding factorial of a number for False Positive", 24, calculator.fact(3), DELTA);
+        assertNotEquals("Finding factorial of a number for False Positive", 1, calculator.fact(6), DELTA);
+        assertNotEquals("Finding factorial of a number for False Positive", 2400, calculator.fact(3), DELTA);
     }
 
     @Test
@@ -27,7 +27,7 @@ public class CalculatorTest {
     @Test
     public void powerFalsePositive(){
         assertNotEquals("Finding power for False Positive", 6, calculator.power(2, 2), DELTA);
-        assertNotEquals("Finding power for False Positive", -7.3, calculator.power(2, 3), DELTA);
+        assertNotEquals("Finding power for False Positive", -7.3, calculator.power(4, 3), DELTA);
     }
 
     @Test
